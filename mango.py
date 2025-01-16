@@ -14,7 +14,7 @@ def mango(u, v):
     # Calculate coordinates
     x = a * np.sin(v) * np.cos(u) + side_curve
     y = b * np.sin(v) * np.sin(u)
-    z = c * np.cos(v) + tip_curve
+    z = -(c * np.cos(v) + tip_curve)
     
     return x, y, z
 
